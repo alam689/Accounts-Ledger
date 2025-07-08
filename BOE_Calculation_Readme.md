@@ -60,3 +60,31 @@ Then:
 
 You can use this markdown file as a base reference or for training, ERP documentation, or BOE audit trails.
 
+# 📘 BOE Components with Account Type Classification
+
+| Component                    | Example Entry (BDT) | Account Name               | Account Type            | Notes                                   |
+| ---------------------------- | ------------------- | -------------------------- | ----------------------- | --------------------------------------- |
+| **Assessable Value (AV)**    | 1,100,000           | Inventory / Raw Materials  | **Asset**               | Capitalized in inventory                |
+| **Customs Duty (CD)**        | 110,000             | Customs Duty Payable       | **Liability / Expense** | Can be expense or part of inventory     |
+| **Regulatory Duty (RD)**     | 36,300              | Regulatory Duty Payable    | **Liability / Expense** | Similar to CD, usually included in cost |
+| **Supplementary Duty (SD)**  | 249,260             | Supplementary Duty Payable | **Liability / Expense** | Add to inventory value                  |
+| **VAT at Import**            | 216,789             | **VAT Input (Import)**     | **Asset**               | Claimable input VAT                     |
+| **Advance Income Tax (AIT)** | 55,000              | **Advance Tax (AIT)**      | **Asset**               | Considered an advance income tax asset  |
+| **Advance Trade VAT (ATV)**  | 44,000              | Advance Trade VAT          | **Asset**               | Claimable or adjustable                 |
+| **Port Charges**             | 20,000              | Port / CHA Expense         | **Expense or Asset**    | Add to inventory if material            |
+| **Transport/Local Delivery** | 10,000              | Transport Inward (Import)  | **Expense or Asset**    | Add to inventory for landed cost        |
+
+# 📦 Inventory Capitalization:
+All costs directly attributable to getting the goods to their intended location and condition should be capitalized in inventory (as per IAS 2 or local GAAP).
+Therefore, CD, RD, SD, VAT (if non-creditable), Port Charges, Transport are typically added to inventory cost.
+# 🧾 ERP Journal Entry Summary Example
+| Account                            | Type      | Debit (BDT) | Credit (BDT) |
+| ---------------------------------- | --------- | ----------- | ------------ |
+| Inventory / Raw Materials          | Asset     | 1,841,349   |              |
+| VAT Input (Import)                 | Asset     | 216,789     |              |
+| Advance Tax (AIT)                  | Asset     | 55,000      |              |
+| LC / Foreign Supplier Payable      | Liability |             | 1,100,000    |
+| Customs, RD, SD Payable (Optional) | Liability |             | 395,560      |
+| Bank / Cash                        | Asset     |             | 617,578      |
+
+
